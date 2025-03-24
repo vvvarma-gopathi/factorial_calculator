@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <link rel="stylesheet" href="factorial.css">
+</head>
+<body>
+    <div id="positional-div">
+        <h2>Welcome to Factorial Calculator click start button to continue</h2>
+        <button onclick="hide()">START</button>
+    </div>
+    <div id="fmain" class="main">
+        <div class="calculator">
+            <h2>Factorial Calculator</h2>
+                <label for="number">Enter any number for it's factorial</label> <br>
+                <input type="number" placeholder="Enter a positive number" id="number"> <br>
+                <label for="select">Select method for calculation</label> <br>
+                <select name="type" id="calculatetype">
+                    <option value="Interactive">Interactive</option>
+                    <option value="Recursive">Recursive</option>
+                </select> <br>
+                <button onclick="getvalues()">Calculate</button>
+                <button onclick="refresh()">Refresh</button>
+        </div>
+        <div id="finalresults">
+            <h4>Results:</h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
